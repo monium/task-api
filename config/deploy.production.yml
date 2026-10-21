@@ -1,0 +1,11 @@
+servers:
+  web:
+    - 144.24.227.189 # galena
+
+volumes:
+  - /var/lib/tasks-api:/data
+
+env:
+  clear:
+    APP_ENV: staging
+    DATABASE_URL: sqlite:////data/tasks.db
